@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package nogizaka;
+
+service NogizakaProfile {
+  rpc FetchProfile(MemberName) returns (Profile) {}
+}
+
+message MemberName {
+  string name = 1;
+}
+
+message Profile {
+  int64 id = 1;
+  string name = 2;
+  string birthday = 3;
+  string constellation = 4;
+  string height = 5;
+  string status = 6;
+}
