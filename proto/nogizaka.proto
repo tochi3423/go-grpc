@@ -13,8 +13,9 @@ message MemberName {
 message Profile {
   int64 id = 1;
   string name = 2;
-  string birthday = 3;
-  string constellation = 4;
-  string height = 5;
-  string status = 6;
+  string description = 3;
+  string birthday = 4;
+  string constellation = 5;
+  string height = 6;
+  string status = 7;
 }
